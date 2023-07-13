@@ -1,10 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('install') {
             steps {
-                    sh 'cd react-ts'
-                    sh 'ls'
+                    dir('react-ts'){
+                        sh 'npm install'
+                    }
             }
         }
     }
