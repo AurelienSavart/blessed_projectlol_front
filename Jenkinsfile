@@ -4,7 +4,9 @@ pipeline {
         stage('install') {
             steps {
                     dir('react-ts'){
-                        sh 'npm install'
+                        withNPM() {
+                                sh 'npm install'
+                            }
                     }
             }
         }
