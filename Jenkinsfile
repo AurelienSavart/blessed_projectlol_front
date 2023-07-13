@@ -4,7 +4,7 @@ pipeline {
         stage('install') {
             steps {
                     dir('react-ts'){
-                        withNPM() {
+                        withNPM(npmrcConfig: 'cutom-nrpc') {
                                 sh 'npm install'
                             }
                     }
