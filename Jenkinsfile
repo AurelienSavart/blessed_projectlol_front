@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd react-ts'
-                st 'ls'
+                step {
+                    sh 'cd react-ts'
+                }
+                step {
+                    sh 'ls'
+                }
             }
         }
     }
