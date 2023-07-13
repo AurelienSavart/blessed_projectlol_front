@@ -1,8 +1,12 @@
 pipeline {
-  agent any
-  stages{
-    stage(build){
-      echo "build"
+    agent windows
+    stages {
+        stage('build') {
+            steps {
+                echo 'build'
+                }
+            }
+        }
     }
-  }
 }
+
