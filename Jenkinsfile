@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'cd react-ts'
+                st 'ls'
             }
         }
     }
