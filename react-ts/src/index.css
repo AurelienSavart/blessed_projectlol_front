@@ -73,9 +73,11 @@ button:focus-visible {
   height: 100vh;
 }
 
-main{
-  height: 100vh;
+.champions {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2;
+  height: 100vh;
   justify-content: space-between;
   padding: 3rem;
 }
