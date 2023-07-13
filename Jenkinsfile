@@ -4,7 +4,7 @@ pipeline {
         stage('install') {
             steps {
                     dir('react-ts'){
-                        withNPM(npmrcConfig:) {
+                        withNPM(npmrcConfig: 'customNrpc') {
                                 sh 'npm install'
                             }
                     }
